@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border-sizing: boder-box;
+	font-family: 'Poppins';
+	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+	font-weight: 600;
+}
+
+.section-home {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-home .title-home {
+	width: 100%
+	height: 80px;
+	padding-bottom: 40px;
+}
+
+.section-home h1 {
+	font-size: 2rem;
+	letter-spacing: 2px;
+
+}
+
+.section-home .calculator {
+	width: 30%;
+	height: 395px;
+	border: 4px solid #0888a5;
+    border-radius: 12px 12px 18px 18px;
+    overflow: hidden;
+}
+
+.section-home .calculator .calculator-display {
+	width: 95%;
+	height: 67px;
+	text-align: end;
+	font-size: 3.5rem;
+}
+
+.section-home .calculator hr {
+	background-color: #9e9e9e;
+	height: 2px;
+    border: none;
+}
+
+.section-home .calculator .calculator-keypad {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.section-home .calculator .calculator-keypad div{
+	cursor: pointer;
+}
+
+
+
+.section-home .calculator .calculator-keypad .button {
+	width: 24%;
+	height: 73px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 2rem;
+
+}
+
+.section-home .calculator .calculator-keypad .button-yellow {
+	width: 35%;
+	height: 45px;
+	font-size: 2.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.section-home .calculator .calculator-keypad .button-yellow1 {
+	width: 37%;
+	height: 45px;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section-home .calculator .calculator-keypad .button-yellow2 {
+	width: 48%;
+	height: 45px;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section-home .calculator .calculator-keypad .button-yellow3 {
+	width: 24%;
+	height: 45px;
+	font-size: 2rem;
+	border: 2px solid #ff5722;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section-home .calculator .calculator-keypad .orange {
+	border: 2px solid #ff5722;
+	height: 45px;
+	font-size: 2rem;
+    margin-top: 9px;
+}
+
+
+/**  RESPONSIVE ** */
+
+@media screen and (max-width: 768px) 
+{
+	.section-home .calculator {
+    width: 80%;
+   }
+
+}
